@@ -1,0 +1,34 @@
+.social {
+    display: flex;
+}
+.social__item {
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+
+    transition: 0.2s ease-in;
+    cursor: pointer;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        opacity: 0.75;
+    }
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        margin-right: 20px;
+    }
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        width: 38px;
+        height: 38px;
+    }
+}
